@@ -156,7 +156,9 @@ async def play(client, m: Message):
 
     else:
         if len(m.command) < 2:
-            await m.reply("-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️.")
+            await m.reply(
+                "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️."
+            )
         else:
             await m.delete()
             huehue = await m.reply("جاري البحث عن الاغنية ⚡️.")
@@ -288,9 +290,7 @@ async def vplay(client, m: Message):
             Q = 720
             hmmm = HighQualityVideo()
             if search == 0:
-                await huehue.edit(
-                    "**لم يتم العثور على شيء , اعطني اسم المغني كامل**"
-                )
+                await huehue.edit("**لم يتم العثور على شيء , اعطني اسم المغني كامل**")
             else:
                 songname = search[0]
                 url = search[1]

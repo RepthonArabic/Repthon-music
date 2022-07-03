@@ -26,7 +26,9 @@ async def song(client, message: Message):
             "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️.",
         )
         return
-    pablo = await client.send_message(message.chat.id, f"**اسم الاغنية ⚡️ :** `{urlissed}`")
+    pablo = await client.send_message(
+        message.chat.id, f"**اسم الاغنية ⚡️ :** `{urlissed}`"
+    )
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
     mi = search.result()
     mio = mi["search_result"]
@@ -106,7 +108,7 @@ def get_text(message: Message) -> [None, str]:
 def humanbytes(size):
     if not size:
         return ""
-    power = 2 ** 10
+    power = 2**10
     raised_to_pow = 0
     dict_power_n = {0: "", 1: "Ki", 2: "Mi", 3: "Gi", 4: "Ti"}
     while size > power:
@@ -228,14 +230,16 @@ is_downloading = False
 
 def time_to_seconds(time):
     stringt = str(time)
-    return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":"))))
+    return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
 @Client.on_message(filters.command(["فيديو", "فيد"], prefixes=f"{HNDLR}"))
 async def vsong(client, message: Message):
     urlissed = get_text(message)
 
-    pablo = await client.send_message(message.chat.id, f"** اسم الاغنية ⚡️ :** `{urlissed}`")
+    pablo = await client.send_message(
+        message.chat.id, f"** اسم الاغنية ⚡️ :** `{urlissed}`"
+    )
     if not urlissed:
         await pablo.edit(
             "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️."
