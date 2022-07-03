@@ -24,7 +24,7 @@
             "value": ""
         },
             "API_HASH": {
-            "description": "ايبي هاش
+            "description": "ايبي هاش",
             "required": true,
             "value": ""
         },
