@@ -21,7 +21,7 @@
         "HNDLR": {
             "description": "لاتغيرها ابدا",
             "required": false,
-            "value": ""
+            "value": "!"
         },
             "API_HASH": {
             "description": "ايبي هاش",
