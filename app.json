@@ -1,7 +1,7 @@
 {
     "name": "سورس ريبثون ميوزك",
     "description": "لتشغيل الاغاني في المجموعات والقنوات.",
-    "logo": "https://telegra.ph/file/1c45f4fac38e5a84a8844.jpg",
+    "logo": "https://graph.org/file/1c45f4fac38e5a84a8844.jpg",
     "keywords": [
         "Telegram",
         "MusicPlayer",
@@ -21,7 +21,7 @@
         "HNDLR": {
             "description": "لاتغيرها ابدا",
             "required": false,
-            "value": "!"
+            "value": "$"
         },
             "API_HASH": {
             "description": "ايبي هاش",
@@ -46,7 +46,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "free"
+            "size": "basic"
         }
     },
     "stack": "container"
