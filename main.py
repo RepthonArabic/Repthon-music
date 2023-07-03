@@ -1,7 +1,6 @@
 import asyncio
 
 
-from config import call_py
 from MusicAndVideo.quote import arq
 
 
