@@ -4,8 +4,7 @@ import asyncio
 from MusicAndVideo.quote import arq
 
 
-async def main():
-    await call_py.start()
+async def main()
     print(
         """
     ------------------
