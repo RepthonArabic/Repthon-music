@@ -21,4 +21,3 @@ contact_filter = filters.create(
 )
 
 bot = Client(SESSION, API_ID, API_HASH, plugins=dict(root="MusicAndVideo"))
-call_py = PyTgCalls(bot)
